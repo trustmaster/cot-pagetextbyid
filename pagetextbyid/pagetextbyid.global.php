@@ -21,6 +21,7 @@ function pagetextbyid($pid)
 	$last_pagetext['pid'] = $pid;
 	if (is_numeric($pid)) {
 		$res = $db->query("SELECT page_id, page_alias, page_title, page_text, page_parser FROM $db_pages WHERE page_id = ?", array((int) $pid));
+		$last_pagetext['id'] = $id;
 	} else {
 		$res = $db->query("SELECT page_id, page_alias, page_title, page_text, page_parser FROM $db_pages WHERE page_alias = ?", array((string) $pid));
 		$last_pagetext['alias'] = $pid;
