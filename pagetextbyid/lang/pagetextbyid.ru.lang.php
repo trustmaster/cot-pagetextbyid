@@ -12,7 +12,7 @@ $adminhelp = <<<HELP
     &lt;a href=&quot;{PHP.last_pagetext.id|cot_url('page','m=edit&amp;id=$this')}&quot;&gt;Edit category description&lt;/a&gt;
     &lt;div&gt;{PHP.last-pagetext.text}&lt;/div&gt;
 &lt;!-- ELSE --&gt;
-    &lt;a href=&quot;{LIST_CAT|cot_url('page','m=add&amp;c=inc_pages&amp;al=$this')}&quot;&gt;Add category description&lt;/a&gt;
+    &lt;a href=&quot;{LIST_CAT|cot_url('page','m=add')}&quot;&gt;Add category description&lt;/a&gt;
 &lt;!-- ENDIF --&gt;
 </code>
 </pre>

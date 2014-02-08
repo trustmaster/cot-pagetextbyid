@@ -47,7 +47,7 @@ or
     	<a href="{PHP.last_pagetext.id|cot_url('page','m=edit&id=$this')}">Edit category description</a>
     	<div>{PHP.last-pagetext.text}</div>
     <!-- ELSE -->
-    	<a href="{LIST_CAT|cot_url('page','m=add&c=inc_pages&al=$this')}">Add category description</a>
+    	<a href="{LIST_CAT|cot_url('page','m=add')}">Add category description</a>
     <!-- ENDIF -->
 
 
