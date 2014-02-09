@@ -34,7 +34,7 @@ function pagetextbyid($pid)
 		$last_pagetext['id'] = $row['page_id'];
 		$last_pagetext['alias'] = $row['page_alias'];
 		$last_pagetext['title'] = $row['page_title'];
-		return $last_pagetext;
+		return $last_pagetext['text'];
 	}
 	else
 	{
